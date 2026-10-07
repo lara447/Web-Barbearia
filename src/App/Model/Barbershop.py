@@ -53,6 +53,8 @@ class Barbershop:
 
     #metodos
     def ativar(self):
+        if not self.pode_ser_ativada():
+            raise ValueError("A barbearia não possui os dados necessários.")
         self.__ativa = True
 
     def desativar(self):
@@ -68,5 +70,14 @@ class Barbershop:
         self.__nome = nome 
         self.__descricao = descricao
         self.__telefone = telefone
-        
-        
+
+    def pode_ser_ativada(self) -> bool:
+        return (
+            bool(self.__nome.strip())
+            and bool(self.__cnpj.strip())
+            and bool(self.__telefone.strip())
+        )
+    def calcular_nota_media(self, notas: list[float]) -> float:
+        if not notas:
+            return 0.0 
+        return sum(notas) / len(notas)
