@@ -1,0 +1,29 @@
+:root {
+  /* Cores */
+  --bg:        #0d0c0b;  /* fundo do app */
+  --surface:   #16130f;  /* cartões, inputs, barra de abas */
+  --surface2:  #1e1a14;  /* nível acima (toggle desligado) */
+  --line:      #2e281d;  /* bordas e divisores */
+  --gold:      #c9a15b;  /* acento principal */
+  --gold-d:    #a88441;  /* acento pressionado / bordas douradas */
+  --text:      #efe8da;  /* texto principal */
+  --muted:     #9a9283;  /* texto secundário, placeholder */
+  --on-gold:   #17120a;  /* texto sobre dourado */
+  --ok:        #5fae7a;  /* Confirmado */
+  --warn:      #d8a443;  /* Pendente */
+  --bad:       #c8624f;  /* Cancelado / erro */
+
+  /* Fontes */
+  --head: 'Barlow Condensed', 'Arial Narrow', Impact, sans-serif;
+  --body: 'Barlow', 'Segoe UI', Roboto, Arial, sans-serif;
+
+  /* Raios */
+  --r-sm: 6px;   /* botões, inputs, horários */
+  --r-md: 8px;   /* chips, miniaturas, segmentado */
+  --r-lg: 10px;  /* cartões */
+  --r-xl: 12px;  /* caixas de autenticação */
+
+  /* Espaços */
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px;
+  --s-4: 16px; --s-5: 18px; --s-6: 24px;
+}

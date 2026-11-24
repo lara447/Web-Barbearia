@@ -1,0 +1,279 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  padding: var(--s-6) var(--s-5);
+  background: radial-gradient(circle at 80% 25%, var(--surface2), var(--bg));
+  border-bottom: 1px solid var(--line);
+}
+
+.heroInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+
+.cityTag {
+  color: var(--gold);
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.heroTitle {
+  font-family: var(--head);
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 0.98;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.gold {
+  color: var(--gold);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+
+.body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--s-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-6);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--s-3);
+}
+
+.sectionTitle {
+  font-family: var(--head);
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.textBtn {
+  background: transparent;
+  border: 0;
+  color: var(--gold);
+  font-size: 13.5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.carousel {
+  display: flex;
+  gap: var(--s-3);
+  overflow-x: auto;
+  padding-bottom: var(--s-1);
+}
+
+.miniCard {
+  flex: 0 0 160px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 180ms ease;
+}
+
+.miniCard:hover {
+  border-color: var(--gold-d);
+}
+
+.miniThumb {
+  height: 110px;
+  position: relative;
+  cursor: pointer;
+}
+
+.favBadge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.miniInfo {
+  padding: var(--s-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  cursor: pointer;
+}
+
+.cardTitle {
+  font-family: var(--head);
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.meta {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--s-3);
+}
+
+.serviceTile {
+  background: var(--surface);
+  border: 1px solid var(--gold-d);
+  border-radius: var(--r-lg);
+  padding: var(--s-3);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--s-2);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+
+.priceBig {
+  font-family: var(--head);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--gold);
+}
+
+.listCard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: var(--s-3);
+  display: flex;
+  gap: var(--s-3);
+}
+
+.listThumb {
+  width: 88px;
+  height: 104px;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.listBody {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--s-2);
+}
+
+.slotsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s-2);
+}
+
+.slotBtn {
+  min-height: 44px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.slotSelected {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--on-gold);
+}
+
+.slotDisabled {
+  opacity: 0.38;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+
+.rowBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-2);
+}
+
+@media (min-width: 900px) {
+  .hero {
+    padding: var(--s-6) var(--s-6);
+  }
+
+  .heroTitle {
+    font-size: 48px;
+  }
+
+  .body {
+    padding: var(--s-6);
+  }
+
+  .carousel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--s-4);
+  }
+
+  .miniCard {
+    flex: initial;
+  }
+
+  .miniThumb {
+    height: 145px;
+  }
+
+  .servicesGrid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--s-4);
+  }
+
+  .splitDesktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-5);
+    align-items: start;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "appId": "com.barberfind.app",
+  "appName": "Barber Find",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

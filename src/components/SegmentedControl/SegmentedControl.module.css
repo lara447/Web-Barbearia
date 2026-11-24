@@ -1,0 +1,28 @@
+.group {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  padding: var(--s-1);
+  background: var(--surface2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+}
+
+.tab {
+  min-height: 38px;
+  border: 0;
+  border-radius: var(--r-sm);
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--head);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.isActive {
+  background: var(--gold);
+  color: var(--on-gold);
+}

@@ -1,0 +1,50 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.label {
+  font-family: var(--body);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.control {
+  width: 100%;
+  min-height: 46px;
+  padding: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 15px;
+  outline: none;
+  color-scheme: dark;
+}
+
+.control:focus {
+  border-color: var(--gold-d);
+}
+
+.control::placeholder {
+  color: var(--muted);
+}
+
+.checkboxRow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  min-height: 44px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--gold);
+}
